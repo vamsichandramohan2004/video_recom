@@ -31,7 +31,6 @@ def recommend_posts(username, category_id=None, mood=None):
     # Return top 10 posts
     return recommended_posts[:10]
 
-# Single API Endpoint: Feed with optional username, category_id, and mood
 @app.route('/feed', methods=['GET'])
 def feed():
     username = request.args.get('username')
